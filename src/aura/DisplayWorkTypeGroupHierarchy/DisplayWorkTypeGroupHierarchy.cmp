@@ -1,0 +1,11 @@
+<aura:component implements="lightning:availableForFlowScreens">
+    
+    <aura:attribute name="workTypeGroups" type="WorkTypeGroup[]"
+                    description="Selected work type group heirarchy" />
+
+	<lightning:breadcrumbs class="slds-align_absolute-center slds-text-heading_small">
+        <aura:iteration items="{! v.workTypeGroups}" var="workTypeGroup">
+        	<lightning:breadcrumb label="{! workTypeGroup.Name}" />
+        </aura:iteration>
+    </lightning:breadcrumbs>
+</aura:component>

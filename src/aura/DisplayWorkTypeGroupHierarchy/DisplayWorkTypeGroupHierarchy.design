@@ -1,0 +1,4 @@
+<design:component>
+	<design:attribute name="workTypeGroups" label="Work Type Group Records" 
+                      description="Selected Work Type Group Hierarchy "/>
+</design:component>
